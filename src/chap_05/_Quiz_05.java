@@ -23,7 +23,7 @@ public class _Quiz_05 {
             System.out.println();
         }
 
-        // 선생님 코드
+        // 강사님 코드
         int[] sizeArray = new int[10];
         int x = 0;
         for (int i = 0; i < sizeArray.length; i++) {

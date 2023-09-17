@@ -4,15 +4,15 @@ import chap_08.detector.Detectable;
 import chap_08.reporter.Reportable;
 
 public class FactoryCam extends Camera implements Detectable, Reportable {
-    public Detectable detector; // 인터페이스 변수
-    public Reportable reportor;
+    private Detectable detector; // 인터페이스 변수
+    private Reportable reporter;
 
     public void setDetector(Detectable detector) {
         this.detector = detector;
     }
 
-    public void setReportor(Reportable reportor) {
-        this.reportor = reportor;
+    public void setReporter(Reportable reporter) {
+        this.reporter = reporter;
     }
 
     @Override
@@ -22,11 +22,11 @@ public class FactoryCam extends Camera implements Detectable, Reportable {
 
     @Override
     public void detect() {
-
+        detector.detect();
     }
 
     @Override
     public void report() {
-
+        reporter.report();
     }
 }

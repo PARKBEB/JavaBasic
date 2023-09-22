@@ -16,9 +16,6 @@ public class _Quiz_10 {
         Stream<Customers> CuStream = customers.stream();
         CuStream.map(x -> x.age > 20 ? x.name + "\t5000원" : x.name + "\t무료")
                 .forEach(System.out::println);
-
-
-
     }
 }
 

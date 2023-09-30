@@ -21,7 +21,7 @@ public class _04_Folder {
         // 맥 : /Users/Nadocoding/Desktop
         folder = new File(folderName);
         folder.mkdirs();
-        if (folder.exists()) {
+        if (folder.exists()) { // 경로.exists() 경로에 file/directory(folder) 존재 확인
             System.out.println("폴더가 존재합니다 : " + folder.getAbsolutePath());
         } else {
             System.out.println("폴더 생성 실패 (mkdir)");
